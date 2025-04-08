@@ -45,7 +45,7 @@ st.markdown('Upload an image to detect if it is **Real**, **AI-Generated**, or *
 file = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
 
 if file:
-    st.image(file, caption="Uploaded Image", use_column_width=True)
+    st.image(file, caption="Uploaded Image", use_container_width=True)
     st.write("Sending image to API for analysis...")
     file_path = os.path.join(UPLOAD_FOLDER, f"uploaded_{int(time.time())}.jpg")
     with open(file_path, "wb") as f:
