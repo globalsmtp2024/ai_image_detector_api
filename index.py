@@ -36,10 +36,10 @@ def detect_ai_image_with_api(image_path):
     else:
         return "Error", None
 
-st.set_page_config(page_title="Centum Logics - AI Image Detection Tool", page_icon="🤖", layout="centered")
+st.set_page_config(page_title="Tanveer- AI Image Detection Tool", page_icon="🤖", layout="centered")
 
-st.title('AI Image Detection Tool by Centum Logics')
-st.markdown('### Welcome to the AI Image Detection Tool by Centum Logics!')
+st.title('AI Image Detection Tool by Tanveer')
+st.markdown('### Welcome to the AI Image Detection Tool by Tanveer!')
 st.markdown('Upload an image to detect if it is **Real**, **AI-Generated**, or **Uncertain**.')
 
 file = st.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
