@@ -59,6 +59,6 @@ if file:
         st.error("The API did not return a valid prediction.")
     else:
         st.success(f"Prediction: **{prediction}**")
-        # st.info(f"AI-Generated Confidence Score: `{confidence}`")
+        st.info(f"AI-Generated Confidence Score: `{confidence}`")
 else:
     st.warning("Please upload an image to proceed.")
